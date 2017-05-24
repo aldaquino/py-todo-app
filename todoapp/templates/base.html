@@ -1,0 +1,23 @@
+{% load staticfiles %}
+
+<!DOCTYPE HTML>
+<html ng-app="TaskApp">
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'libs/bootstrap-3.3.7-dist/css/bootstrap.min.css' %}">
+        <!--<link rel="stylesheet" type="text/css" href="{% static 'libs/css/font-awesome-4.7.0/css/font-awesome.min.css' %}">-->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
+    </head>
+    <body>
+        <div id="container">
+            <div ng-app="TaskApp">
+                <div id="wrapper">
+                    <div id="content" ng-view>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="{% static 'libs/js/angular.min.js' %}"></script>
+        <script src="{% static 'libs/js/angular-route.min.js' %}"></script>
+        <script src="{% static '/js/control.js' %}"></script>
+    </body>
+</html>
